@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+  </body>
+
+  <script type="text/javascript">
+
+    window.onload = function() {
+        var varUA = navigator.userAgent.toLowerCase();
+
+        if ( varUA.indexOf('android') > -1) {
+            location.href = 'https://play.google.com/store/apps/details?id=kr.co.wikiacademy.adsp';
+        } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+            location.href = 'https://apps.apple.com/kr/app/%EC%9D%B4%EC%A7%80%ED%8C%A8%EC%8A%A4-adsp/id1553585860';
+        } else {
+            alert('모바일에서 접속해주세요.')
+            location.href = 'https://wikibook.co.kr/adsp2022/';
+        }
+    }
+  </script>
+</html>
